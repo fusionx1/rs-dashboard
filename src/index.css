@@ -1,0 +1,5 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "https://js.arcgis.com/4.19/@arcgis/core/assets/esri/themes/light/main.css";

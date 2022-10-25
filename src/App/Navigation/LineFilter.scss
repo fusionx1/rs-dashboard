@@ -1,0 +1,47 @@
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #F5F5F5;
+        min-width: 120px;
+        box-shadow: 0px 6px 12px 0px rgba(0,0,0,0.2);
+        padding: 9px 12px;
+        z-index: 1;
+        color: black;
+        font-size: 12px;
+    }
+    
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown-item {
+        width: 150px;
+        cursor: pointer;
+    }
+
+    .dropdown-item:hover {
+        background-color: #E5E5E5;
+    }
+    .selected {
+        color: #FF6300;
+        width: 150px;
+    }
+
+.filter-menu {
+    cursor: pointer;
+    color: white;
+    font-size: 14px;
+}
+
+.filter-icon {
+    width: 26px;
+    height: 26px;
+    background-image: url('https://rhomberg-sersa.maps.arcgis.com/sharing/rest/content/items/cfda2820f22145338c41d1ff93c07c82/data');
+    background-size: cover;
+    cursor: pointer;
+}

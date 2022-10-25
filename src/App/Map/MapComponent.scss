@@ -1,0 +1,134 @@
+.esri-basemap-gallery__item-container {
+  background-color: #F5F5F5;
+  width: 224px;
+  }
+
+div.esri-basemap-gallery.esri-widget.esri-widget--panel-height-only {
+  background-color: #F5F5F5;
+  width: 224px;
+}
+
+.esri-basemap-gallery__item.esri-basemap-gallery__item--selected {
+  background-color: #F5F5F5;
+  border-left-color: #F5F5F5;
+}
+
+li.esri-basemap-gallery__item.esri-basemap-gallery__item--selected:hover {
+  background-color: #F5F5F5;
+  border-left-color: #F5F5F5;
+}
+
+li.esri-basemap-gallery__item.esri-basemap-gallery__item--selected:hover .esri-basemap-gallery__item-title {
+  color: #FF6300;
+}
+
+li.esri-basemap-gallery__item:hover .esri-basemap-gallery__item-title {
+  color: black
+}
+
+li.esri-basemap-gallery__item:hover {
+  background-color: #E5E5E5;
+  border-left-color: #E5E5E5;
+}
+
+li.esri-basemap-gallery__item--selected .esri-basemap-gallery__item-title {
+  color: #FF6300;
+}
+
+div.esri-basemap-gallery__item-title {
+  color: black;
+  font-size: 12px;
+  margin-left: 3px;
+}
+
+img.esri-basemap-gallery__item-thumbnail {
+  box-shadow: none;
+  height: 48px;
+  width: 48px;
+}
+div.esri-legend__layer-caption {
+  display: none;
+}
+
+.esri-widget__heading.esri-legend__service-label {
+  font-size: 18px;
+  padding: 6px;
+  font-weight: normal;
+}
+
+.esri-legend__layer-cell.esri-legend__layer-cell--info {
+  font-size: 12px;
+}
+
+div.esri-legend__service {
+  padding: 0px 0px 0px;
+}
+
+
+
+div.absolute.esri-component.esri-legend.esri-widget.esri-widget--panel {
+  width: 224px;
+  max-height: 320px;
+}
+
+div.esri-legend__layer-cell.esri-legend__layer-cell--symbols {
+  padding: 0px;
+}
+
+div.esri-legend__layer-cell.esri-legend__layer-cell--info {
+  padding: 1px;
+  padding-left: 6px;
+}
+
+// Change the size of legend elements
+.esri-legend__service:nth-child(2) svg path {
+  stroke-width: 8;
+  d: path("M 4 10 L 46 10")
+}
+
+// Remove black outline of map view
+.esri-view .esri-view-surface--inset-outline:focus::after {
+  outline: none !important;
+}
+
+table.esri-widget__table tr:nth-child(even) {
+  background-color: #F5F5F5;
+}
+
+table.esri-widget__table tr:nth-child(odd) {
+  background-color: #E5E5E5;
+}
+
+section.esri-popup__navigation {
+  background-color: #E5E5E5;
+}
+
+.esri-feature-fields__field-data a {
+  pointer-events: none;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 16px;
+    background-image: url('https://rhomberg-sersa.maps.arcgis.com/sharing/rest/content/items/d6966abcbac94ad3b582918934b43d1a/data');
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    background-color: #E5E5E5;
+    pointer-events: all;
+    }
+
+}
+
+table.esri-widget__table tr a {
+  color: #E5E5E5;
+  background-color: #E5E5E5;
+
+  &:hover {
+    color:#E5E5E5;
+  };
+
+}
+
+

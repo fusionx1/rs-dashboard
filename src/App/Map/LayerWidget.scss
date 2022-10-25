@@ -1,0 +1,40 @@
+[id=infra3dSelect][type=checkbox] { 
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+  }
+  
+  
+[id=infra3dSelect][type=checkbox]:checked + .sersa-radio {
+     background-image: url('https://rhomberg-sersa.maps.arcgis.com/sharing/rest/content/items/6245cf0a1b114491a928bd5bcbcd5beb/data');
+}
+
+.sersa-radio {
+      width: 16px;
+      height: 16px;
+      background-image: url('https://rhomberg-sersa.maps.arcgis.com/sharing/rest/content/items/015024b516d743dfbb5fddc5e5bd4399/data');
+      background-size: cover;
+      cursor: pointer;
+  }
+
+  .layerWidgetMouseOver {
+    position: relative;
+    display: inline-block;
+}
+
+.layerWidgetMouseOver-content {
+    display: none;
+    position: absolute;
+    left: 25px;
+    top: -5px;
+    background-color: #F5F5F5;
+    box-shadow: 0px 6px 12px 0px rgba(0,0,0,0.2);
+    padding: 4px 6px;
+    z-index: 1;
+
+}
+
+.layerWidgetMouseOver:hover .layerWidgetMouseOver-content {
+    display: block;
+    width: 28rem;
+}

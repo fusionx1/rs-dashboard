@@ -1,0 +1,9 @@
+{
+    "map": {
+        "basemap": "topo-vector"
+    },
+    "view": {
+        "center": [-64, 45],
+        "zoom": 7
+    }
+}

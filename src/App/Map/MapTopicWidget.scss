@@ -1,0 +1,30 @@
+.topic {
+    background-color: #FF6300;
+    border: 2px #FF6300 solid;
+    padding: 4px;
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 180px;
+    text-align: center;
+}
+.topic:hover {
+    color: white;
+    border: 2px white solid;
+    cursor: pointer;
+}
+
+.topic-active {
+    background-color: white;
+    border: 2px white solid;
+    color: black;
+    padding: 4px;
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 180px;
+    text-align: center;
+}
+
+.map-topic-widget {
+    width: 400px;
+    font-size: 14px;
+}

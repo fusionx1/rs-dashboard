@@ -1,0 +1,523 @@
+{
+  "title": {
+    "de": "FahrwegDiagnose Dashboard",
+    "fr": "FahrwegDiagnose Dashboard fr",
+    "it": "FahrwegDiagnose Dashboard it",
+    "en": "FahrwegDiagnose Dashboard"
+  },
+  "summary": {
+    "de": "Übersicht",
+    "fr": "Übersicht fr",
+    "it": "Übersicht it",
+    "en": "Overview"
+  },
+  "zoom-in": {
+    "de": "Vergrössern",
+    "fr": "Vergrössern fr",
+    "it": "Vergrössern it",
+    "en": "Zoom In"
+  },
+  "zoom-out": {
+    "de": "Verkleinern",
+    "fr": "Verkleinern fr",
+    "it": "Verkleinern it",
+    "en": "Zoom Out"
+  },
+  "home-widget-label": {
+    "de": "Standardkartenansicht",
+    "fr": "Standardkartenansicht fr",
+    "it": "Standardkartenansicht it",
+    "en": "Standardkartenansicht en"
+  },
+  "karte": {
+    "de": "Karte",
+    "fr": "Karte fr",
+    "it": "Karte it",
+    "en": "Map"
+  },
+  "Linie": {
+    "de": "Linie",
+    "fr": "Linie fr",
+    "it": "Linie it",
+    "en": "Line"
+  },
+  "Messkampagne": {
+    "de": "Messkampagne",
+    "fr": "Messkampagne fr",
+    "it": "Messkampagne it",
+    "en": "Campaign"
+  },
+  "Gleislage": {
+    "de": "Gleislage",
+    "fr": "Gleislage fr",
+    "it": "Gleislage it",
+    "en": "Track condition"
+  },
+  "Netzzustand Fahrbahn": {
+    "de": "Netzzustand Fahrbahn",
+    "fr": "Netzzustand Fahrbahn fr",
+    "it": "Netzzustand Fahrbahn it",
+    "en": "Rail network condition"
+  },
+  "Netzzustand Fahrbahn pro Linie": {
+    "de": "Netzzustand Fahrbahn pro Linie",
+    "fr": "Netzzustand Fahrbahn pro Linie fr",
+    "it": "Netzzustand Fahrbahn pro Linie it",
+    "en": "Rail network condition per line"
+  },
+  "Gleislage Unruhe": {
+    "de": "Gleislage Unruhe",
+    "fr": "Gleislage Unruhe fr",
+    "it": "Gleislage Unruhe it",
+    "en": "Track quality"
+  },
+  "Gleislage Unruhe pro Linie": {
+    "de": "Gleislage Unruhe pro Linie",
+    "fr": "Gleislage Unruhe pro Linie fr",
+    "it": "Gleislage Unruhe pro Linie it",
+    "en": "Track quality per line"
+  },
+  "Schwellentyp": {
+    "de": "Schwellentyp",
+    "fr": "Schwellentyp fr",
+    "it": "Schwellentyp it",
+    "en": "Sleeper type"
+  },
+  "Schienentyp": {
+    "de": "Schienentyp",
+    "fr": "Schienentyp fr",
+    "it": "Schienentyp it",
+    "en": "Rail type"
+  },
+  "Restlebensdauer": {
+    "de": "Restlebensdauer",
+    "fr": "Restlebensdauer fr",
+    "it": "Restlebensdauer it",
+    "en": "Residual service life"
+  },
+  "Qualitätsnote Einzelfehler": {
+    "de": "Qualitätsnote Einzelfehler",
+    "fr": "Qualitätsnote Einzelfehler fr",
+    "it": "Qualitätsnote Einzelfehler it",
+    "en": "Track quality - Faults"
+  },"Qualitätsnote Einzelfehler pro Linie": {
+    "de": "Qualitätsnote Einzelfehler pro Linie",
+    "fr": "Qualitätsnote Einzelfehler pro Linie fr",
+    "it": "Qualitätsnote Einzelfehler pro Linie it",
+    "en": "Track quality - Faults per line"
+  },
+  "Belastungsgruppe": {
+    "de": "Belastungsgruppe",
+    "fr": "Belastungsgruppe fr",
+    "it": "Belastungsgruppe it",
+    "en": "Load group"
+  },
+  "Trend Netzzustand Fahrbahn": {
+    "de": "Trend Netzzustand Fahrbahn",
+    "fr": "Trend Netzzustand Fahrbahn fr",
+    "it": "Trend Netzzustand Fahrbahn it",
+    "en": "Trend rail network condition"
+  },
+  "Layerauswahl": {
+    "de": "Layerauswahl",
+    "fr": "Layerauswahl fr",
+    "it": "Layerauswahl it",
+    "en": "Layer selection"
+  },
+  "Gleisposition IRISSYS": {
+    "de": "Gleisposition IRISSYS",
+    "fr": "Gleisposition IRISSYS fr",
+    "it": "Gleisposition IRISSYS it",
+    "en": "Track position IRISSYS"
+  },
+  "Schienendatum": {
+    "de": "Schienendatum",
+    "fr": "Schienendatum fr",
+    "it": "Schienendatum it",
+    "en": "Rail date"
+  },
+  "Schwellendatum": {
+    "de": "Schwellendatum",
+    "fr": "Schwellendatum fr",
+    "it": "Schwellendatum it",
+    "en": "Sleeper date"
+  },
+  "hintergrundkarte auswählen": {
+    "de": "Hintergrundkarte auswählen",
+    "fr": "Hintergrundkarte auswählen fr",
+    "it": "Hintergrundkarte auswählen it",
+    "en": "Choose map style"
+  },
+  "ausblenden": {
+    "de": "Ausblenden",
+    "fr": "Ausblenden fr",
+    "it": "Ausblenden it",
+    "en": "Hide"
+  },
+  "grundkarte farbig": {
+    "de": "Grundkarte farbig",
+    "fr": "Grundkarte farbig fr",
+    "it": "Grundkarte farbig it",
+    "en": "Coloured map"
+  },
+  "grundkarte SW": {
+    "de": "Grundkarte SW",
+    "fr": "Grundkarte SW fr",
+    "it": "Grundkarte SW it",
+    "en": "BW map"
+  },
+  "luftbild": {
+    "de": "Luftbild",
+    "fr": "Luftbild fr",
+    "it": "Luftbild it",
+    "en": "Satelite map"
+  },
+  "Neuwertig": {
+    "de": "Neuwertig",
+    "fr": "Neuwertig",
+    "it": "Neuwertig",
+    "en": "New"
+  },
+  "Gut": {
+    "de": "Gut",
+    "fr": "Gut",
+    "it": "Gut",
+    "en": "Good"
+  },
+  "Ausreichend": {
+    "de": "Ausreichend",
+    "fr": "Ausreichend",
+    "it": "Ausreichend",
+    "en": "Sufficient"
+  },
+  "Schlecht": {
+    "de": "Schlecht",
+    "fr": "Schlecht",
+    "it": "Schlecht",
+    "en": "Bad"
+  },
+  "Unbekannt": {
+    "de": "Unbekannt",
+    "fr": "Unbekannt",
+    "it": "Unbekannt",
+    "en": "Unknown"
+  },
+  "Qualitaetsnote_ID_0": {
+    "de": "Unbekannt",
+    "fr": "Unbekannt fr",
+    "it": "Unbekannt it",
+    "en": "Unknown"
+  },
+  "Qualitaetsnote_ID_1": {
+    "de": "Neuwertig",
+    "fr": "Neuwertig fr",
+    "it": "Neuwertig it",
+    "en": "New"
+  },
+  "Qualitaetsnote_ID_2": {
+    "de": "Gut",
+    "fr": "Gut fr",
+    "it": "Gut it",
+    "en": "Good"
+  },
+  "Qualitaetsnote_ID_3": {
+    "de": "Ungenügend",
+    "fr": "Ungenügend fr",
+    "it": "Ungenügend it",
+    "en": "Insufficient"
+  },
+  "Qualitaetsnote_ID_4": {
+    "de": "Schlecht",
+    "fr": "Schlecht fr",
+    "it": "Schlecht it",
+    "en": "Bad"
+  },
+  "TUG_TQI_ID_0": {
+    "de": "Unbekannt",
+    "fr": "Unbekannt fr",
+    "it": "Unbekannt it",
+    "en": "Unknown"
+  },
+  "TUG_TQI_ID_1": {
+    "de": "Neuwertig",
+    "fr": "Neuwertig fr",
+    "it": "Neuwertig it",
+    "en": "New"
+  },
+  "TUG_TQI_ID_2": {
+    "de": "Gut",
+    "fr": "Gut fr",
+    "it": "Gut it",
+    "en": "Good"
+  },
+  "TUG_TQI_ID_3": {
+    "de": "Ausreichend",
+    "fr": "Ausreichend fr",
+    "it": "Ausreichend it",
+    "en": "Sufficient"
+  },
+  "TUG_TQI_ID_4": {
+    "de": "Ungenügend",
+    "fr": "Ungenügend fr",
+    "it": "Ungenügend it",
+    "en": "Insufficient"
+  },
+  "TUG_TQI_ID_5": {
+    "de": "Schlecht",
+    "fr": "Schlecht fr",
+    "it": "Schlecht it",
+    "en": "Bad"
+  },
+  "Netzzustand_Fahrbahn_ID_0": {
+    "de": "Unbekannt",
+    "fr": "Unbekannt fr",
+    "it": "Unbekannt it",
+    "en": "Unknown"
+  },
+  "Netzzustand_Fahrbahn_ID_1": {
+    "de": "Neuwertig",
+    "fr": "Neuwertig fr",
+    "it": "Neuwertig it",
+    "en": "New"
+  },
+  "Netzzustand_Fahrbahn_ID_2": {
+    "de": "Gut",
+    "fr": "Gut fr",
+    "it": "Gut it",
+    "en": "Good"
+  },
+  "Netzzustand_Fahrbahn_ID_3": {
+    "de": "Ausreichend",
+    "fr": "Ausreichend fr",
+    "it": "Ausreichend it",
+    "en": "Sufficient"
+  },
+  "Netzzustand_Fahrbahn_ID_4": {
+    "de": "Schlecht",
+    "fr": "Schlecht fr",
+    "it": "Schlecht it",
+    "en": "Bad"
+  },
+  "Restlebensdauer_ID_0": {
+    "de": "Unbekannt",
+    "fr": "Unbekannt fr",
+    "it": "Unbekannt it",
+    "en": "Unknown"
+  },
+  "Restlebensdauer_ID_1": {
+    "de": ">40 Jahre",
+    "fr": ">40 Jahre fr",
+    "it": ">40 Jahre it",
+    "en": ">40 years"
+  },
+  "Restlebensdauer_ID_2": {
+    "de": "30-40 Jahre",
+    "fr": "30-40 Jahre fr",
+    "it": "30-40 Jahre it",
+    "en": "30-40 years"
+  },
+  "Restlebensdauer_ID_3": {
+    "de": "20-30 Jahre",
+    "fr": "20-30 Jahre fr",
+    "it": "20-30 Jahre it",
+    "en": "20-30 years"
+  },
+  "Restlebensdauer_ID_4": {
+    "de": "5-20 Jahre",
+    "fr": "5-20 Jahre fr",
+    "it": "5-20 Jahre it",
+    "en": "5-20 years"
+  },
+  "Restlebensdauer_ID_5": {
+    "de": "0-5 Jahre",
+    "fr": "0-5 Jahre fr",
+    "it": "0-5 Jahre it",
+    "en": "0-5 years"
+  },
+  "Schienentyp_ID_0": {
+    "de": "Unbekannt",
+    "fr": "Unbekannt fr",
+    "it": "Unbekannt it",
+    "en": "Unknown"
+  },
+  "Schienentyp_ID_1": {
+    "de": "46 E1",
+    "fr": "46 E1",
+    "it": "46 E1",
+    "en": "46 E1"
+  },
+  "Schienentyp_ID_2": {
+    "de": "36 E3",
+    "fr": "36 E3",
+    "it": "36 E3",
+    "en": "36 E3"
+  },
+  "Schienentyp_ID_3": {
+    "de": "54 E2",
+    "fr": "54 E2",
+    "it": "54 E2",
+    "en": "54 E2"
+  },
+  "Schienentyp_ID_4": {
+    "de": "57 Ri1",
+    "fr": "57 Ri1",
+    "it": "57 Ri1",
+    "en": "57 Ri1"
+  },
+  "Schienentyp_ID_5": {
+    "de": "67 Ri1",
+    "fr": "67 Ri1",
+    "it": "67 Ri1",
+    "en": "67 Ri1"
+  },
+  "Schienentyp_ID_6": {
+    "de": "VST C",
+    "fr": "VST C",
+    "it": "VST C",
+    "en": "VST C"
+  },
+  "Schienentyp_ID_7": {
+    "de": "SBB V",
+    "fr": "SBB V",
+    "it": "SBB V",
+    "en": "SBB V"
+  },
+  "Schwellentyp_ID_0": {
+    "de": "Unbekannt",
+    "fr": "Unbekannt fr",
+    "it": "Unbekannt it",
+    "en": "Unknown"
+  },
+  "Schwellentyp_ID_1": {
+    "de": "Beton",
+    "fr": "Beton fr",
+    "it": "Beton it",
+    "en": "Concrete"
+  },
+  "Schwellentyp_ID_2": {
+    "de": "Holz",
+    "fr": "Holz fr",
+    "it": "Holz it",
+    "en": "Wooden"
+  },
+  "Schwellentyp_ID_3": {
+    "de": "Stahl",
+    "fr": "Stahl fr",
+    "it": "Stahl it",
+    "en": "Steel"
+  },
+  "Schwellentyp_ID_4": {
+    "de": "Stahl (Y-Schwellen)",
+    "fr": "Stahl (Y-Schwellen) fr",
+    "it": "Stahl (Y-Schwellen) it",
+    "en": "Y-steel"
+  },
+  "Schwellentyp_ID_5": {
+    "de": "Feste Fahrbahn",
+    "fr": "Feste Fahrbahn fr",
+    "it": "Feste Fahrbahn it",
+    "en": "Ballastless"
+  },
+  "Schwellentyp_ID_6": {
+    "de": "Andere",
+    "fr": "Andere fr",
+    "it": "Andere it",
+    "en": "Other"
+  },
+  "Belastungsgruppe_ID_0": {
+    "de": "Unbekannt",
+    "fr": "Unbekannt fr",
+    "it": "Unbekannt it",
+    "en": "Unknown"
+  },
+  "Belastungsgruppe_ID_1": {
+    "de": "N1 / E1",
+    "fr": "N1 / E1",
+    "it": "N1 / E1",
+    "en": "N1 / E1"
+  },
+  "Belastungsgruppe_ID_2": {
+    "de": "N2 / E2",
+    "fr": "N2 / E2",
+    "it": "N2 / E2",
+    "en": "N2 / E2"
+  },
+  "Belastungsgruppe_ID_3": {
+    "de": "N3 / E3",
+    "fr": "N3 / E3",
+    "it": "N3 / E3",
+    "en": "N3 / E3"
+  },
+  "Belastungsgruppe_ID_4": {
+    "de": "N4 / E4",
+    "fr": "N4 / E4",
+    "it": "N4 / E4",
+    "en": "N4 / E4"
+  },
+  "Qualitätsnote Einzelfehler Description": {
+    "de": "Die Strecke wird in 25m Abschnitten eingeteilt. Innerhalb dieser Abschnitte wird untersucht, ob ein Gleislageparameter (Überhöhung, Verwindung, Richtung und Längshöhe) den Grenzwert überschreitet. Trotz der Einteilung in Abschnitten ist diese Analyse nur punktuell und sind somit als Einzelfehler zu verstehen. Empfohlene Massnahmen sind: Beobachten oder Handstopfen.",
+    "fr": "Die Strecke wird in 25m Abschnitten eingeteilt. Innerhalb dieser Abschnitte wird untersucht, ob ein Gleislageparameter (Überhöhung, Verwindung, Richtung und Längshöhe) den Grenzwert überschreitet. Trotz der Einteilung in Abschnitten ist diese Analyse nur punktuell und sind somit als Einzelfehler zu verstehen. Empfohlene Massnahmen sind: Beobachten oder Handstopfen.",
+    "it": "Die Strecke wird in 25m Abschnitten eingeteilt. Innerhalb dieser Abschnitte wird untersucht, ob ein Gleislageparameter (Überhöhung, Verwindung, Richtung und Längshöhe) den Grenzwert überschreitet. Trotz der Einteilung in Abschnitten ist diese Analyse nur punktuell und sind somit als Einzelfehler zu verstehen. Empfohlene Massnahmen sind: Beobachten oder Handstopfen.",
+    "en": "The track is divided into 25m sections. Within these sections it is analysed whether a track position parameter (cant, twist, alignment and longitude) exceeds the limit value. Despite the division by sections, this analysis is only punctual and is therefore to be understood as a single fault."
+  },
+  "Qualitätsnote Einzelfehler pro Linie Description": {
+    "de": "Die Strecke wird in 25m Abschnitten eingeteilt. Innerhalb dieser Abschnitte wird untersucht, ob ein Gleislageparameter (Überhöhung, Verwindung, Richtung und Längshöhe) den Grenzwert überschreitet. Trotz der Einteilung in Abschnitten ist diese Analyse nur punktuell und sind somit als Einzelfehler zu verstehen.",
+    "fr": "Die Strecke wird in 25m Abschnitten eingeteilt. Innerhalb dieser Abschnitte wird untersucht, ob ein Gleislageparameter (Überhöhung, Verwindung, Richtung und Längshöhe) den Grenzwert überschreitet. Trotz der Einteilung in Abschnitten ist diese Analyse nur punktuell und sind somit als Einzelfehler zu verstehen.",
+    "it": "Die Strecke wird in 25m Abschnitten eingeteilt. Innerhalb dieser Abschnitte wird untersucht, ob ein Gleislageparameter (Überhöhung, Verwindung, Richtung und Längshöhe) den Grenzwert überschreitet. Trotz der Einteilung in Abschnitten ist diese Analyse nur punktuell und sind somit als Einzelfehler zu verstehen.",
+    "en": "The track is divided into 25m sections. Within these sections it is analysed whether a track position parameter (cant, twist, alignment and longitude) exceeds the limit value. Despite the division by sections, this analysis is only punctual and is therefore to be understood as a single fault."
+  },
+  "Gleislage Unruhe Description": {
+    "de": "Die Strecke wird quasi-kontinuierlich über einen 100m Abschnitt betrachtet. Dabei wird die allgemeine Gleislage auf Unruhe untersucht. Empfohlene Massnahmen: Maschinelles Stopfen oder Revision.",
+    "fr": "Die Strecke wird quasi-kontinuierlich über einen 100m Abschnitt betrachtet. Dabei wird die allgemeine Gleislage auf Unruhe untersucht. Empfohlene Massnahmen: Maschinelles Stopfen oder Revision.",
+    "it": "Die Strecke wird quasi-kontinuierlich über einen 100m Abschnitt betrachtet. Dabei wird die allgemeine Gleislage auf Unruhe untersucht. Empfohlene Massnahmen: Maschinelles Stopfen oder Revision.",
+    "en": "The track is analysed quasi-continuously over a 100m section. The general track condition is assessed for unsteadiness."
+  },
+  "Gleislage Unruhe pro Linie Description": {
+    "de": "Die Strecke wird quasi-kontinuierlich über einen 100m Abschnitt betrachtet. Dabei wird die allgemeine Gleislage auf Unruhe untersucht.",
+    "fr": "Die Strecke wird quasi-kontinuierlich über einen 100m Abschnitt betrachtet. Dabei wird die allgemeine Gleislage auf Unruhe untersucht.",
+    "it": "Die Strecke wird quasi-kontinuierlich über einen 100m Abschnitt betrachtet. Dabei wird die allgemeine Gleislage auf Unruhe untersucht.",
+    "en": "The track is analysed quasi-continuously over a 100m section. The general track condition is assessed for unsteadiness."
+  },    
+  "Netzzustand Fahrbahn Description": {
+    "de": "Die Fahrbahnobjekte wurden in Standardelemente eingeteilt. Diese wurden hinsichtlich seiner Restlebensdauer und der Gleislage ohne Spurweite bewertet auf einer Skala von 1-5, wobei 1 die Bestnote ist.",
+    "fr": "Die Fahrbahnobjekte wurden in Standardelemente eingeteilt. Diese wurden hinsichtlich seiner Restlebensdauer und der Gleislage ohne Spurweite bewertet auf einer Skala von 1-5, wobei 1 die Bestnote ist.",
+    "it": "Die Fahrbahnobjekte wurden in Standardelemente eingeteilt. Diese wurden hinsichtlich seiner Restlebensdauer und der Gleislage ohne Spurweite bewertet auf einer Skala von 1-5, wobei 1 die Bestnote ist.",
+    "en": "The track objects were classified into standard elements. These were assessed in terms of its residual service life and track quality without gauge on a grading scale of 1-5, with 1 being the best mark."
+  },
+  "Netzzustand Fahrbahn pro Linie Description": {
+    "de": "Die Fahrbahnobjekte wurden in Standardelemente eingeteilt. Diese wurden hinsichtlich seiner Restlebensdauer und der Gleislage ohne Spurweite bewertet auf einer Skala von 1-5, wobei 1 die Bestnote ist.",
+    "fr": "Die Fahrbahnobjekte wurden in Standardelemente eingeteilt. Diese wurden hinsichtlich seiner Restlebensdauer und der Gleislage ohne Spurweite bewertet auf einer Skala von 1-5, wobei 1 die Bestnote ist.",
+    "it": "Die Fahrbahnobjekte wurden in Standardelemente eingeteilt. Diese wurden hinsichtlich seiner Restlebensdauer und der Gleislage ohne Spurweite bewertet auf einer Skala von 1-5, wobei 1 die Bestnote ist.",
+    "en": "The track objects were classified into standard elements. These were assessed in terms of its residual service life and track quality without gauge on a grading scale of 1-5, with 1 being the best mark."
+  },
+  "Restlebensdauer Description": {
+    "de": "Die Fahrbahnobjekte wurden in Standardelemente eingeteilt. Diesen Standardelemente werden definierte Nutzungsdauern zugewiesen. Abhängig vom Einbaudatum des Elements resultiert die Restlebensdauer.",
+    "fr": "Die Fahrbahnobjekte wurden in Standardelemente eingeteilt. Diesen Standardelemente werden definierte Nutzungsdauern zugewiesen. Abhängig vom Einbaudatum des Elements resultiert die Restlebensdauer.",
+    "it": "Die Fahrbahnobjekte wurden in Standardelemente eingeteilt. Diesen Standardelemente werden definierte Nutzungsdauern zugewiesen. Abhängig vom Einbaudatum des Elements resultiert die Restlebensdauer.",
+    "en": "The track objects were classified into standard elements. These standard elements are assigned defined service lives. Depending on the installation date of the element, the residual service life results."
+  },
+  "Trend Netzzustand Fahrbahn Description": {
+    "de": "Die Fahrbahnobjekte wurden in Standardelemente eingeteilt. Diese wurden hinsichtlich seiner Restlebensdauer und der Gleislage ohne Spurweite bewertet auf einer Skala von 1-5, wobei 1 die Bestnote ist.",
+    "fr": "Die Fahrbahnobjekte wurden in Standardelemente eingeteilt. Diese wurden hinsichtlich seiner Restlebensdauer und der Gleislage ohne Spurweite bewertet auf einer Skala von 1-5, wobei 1 die Bestnote ist.",
+    "it": "Die Fahrbahnobjekte wurden in Standardelemente eingeteilt. Diese wurden hinsichtlich seiner Restlebensdauer und der Gleislage ohne Spurweite bewertet auf einer Skala von 1-5, wobei 1 die Bestnote ist.",
+    "en": "The track objects were classified into standard elements. These were assessed in terms of its residual service life and track quality without gauge on a grading scale of 1-5, with 1 being the best mark."
+  },
+  "Layerauswahl Description Paragraph 1": {
+    "de": "Über das Aktivieren oder Deaktivieren der Kontrollkästen werden in der Karte die entsprechenden Daten angezeigt bzw. ausgeblendet. Es können bis zu zwei Datensätze gleichzeitig angezeigt werden, wobei diese übereinander, entlang der Gleisachse gelegt werden.",
+    "fr": "Über das Aktivieren oder Deaktivieren der Kontrollkästen werden in der Karte die entsprechenden Daten angezeigt bzw. ausgeblendet. Es können bis zu zwei Datensätze gleichzeitig angezeigt werden, wobei diese übereinander, entlang der Gleisachse gelegt werden.",
+    "it": "Über das Aktivieren oder Deaktivieren der Kontrollkästen werden in der Karte die entsprechenden Daten angezeigt bzw. ausgeblendet. Es können bis zu zwei Datensätze gleichzeitig angezeigt werden, wobei diese übereinander, entlang der Gleisachse gelegt werden.",
+    "en": "By activating or deactivating the check boxes, the corresponding data is displayed or hidden on the map. Up to two data sets can be displayed at the same time, where they are placed on top of each other along the track axis."
+  },
+  "Layerauswahl Description Paragraph 2": {
+    "de": "Die Reihenfolge der Darstellung in der Karte entspricht der Rangfolge der Layerauswahl. So zum Beispiel wird bei der Aktivierung von «Qualitätsnote Einzelfehler» und «Schwellentyp» die Qualitätsnote über den Schwellentyp gelegt. Bei einem kleinen Kartenmassstab wird zur besseren Übersichtlichkeit der in der Layerauswahl-Rangfolge unten stehende Datensatz ausgeblendet.",
+    "fr": "Die Reihenfolge der Darstellung in der Karte entspricht der Rangfolge der Layerauswahl. So zum Beispiel wird bei der Aktivierung von «Qualitätsnote Einzelfehler» und «Schwellentyp» die Qualitätsnote über den Schwellentyp gelegt. Bei einem kleinen Kartenmassstab wird zur besseren Übersichtlichkeit der in der Layerauswahl-Rangfolge unten stehende Datensatz ausgeblendet.",
+    "it": "Die Reihenfolge der Darstellung in der Karte entspricht der Rangfolge der Layerauswahl. So zum Beispiel wird bei der Aktivierung von «Qualitätsnote Einzelfehler» und «Schwellentyp» die Qualitätsnote über den Schwellentyp gelegt. Bei einem kleinen Kartenmassstab wird zur besseren Übersichtlichkeit der in der Layerauswahl-Rangfolge unten stehende Datensatz ausgeblendet.",
+    "en": "The order of display in the map corresponds to the ranking of the layer selection. For example, when 'Track quality - Faults' and 'Sleeper type' are activated, the track quality is placed above the sleeper type. At a small map scale, the data set at the bottom of the layer selection ranking is hidden for better visibility."
+  },
+  "Layerauswahl Description Paragraph 3": {
+    "de": "Neben den Kontrollkästen wird bei der Aktivierung der Kästen ein iNovitas Logo eingeblendet. Über diese Schaltfläche kann im eingebetteten infra3D Rail jeweils ein entsprechenden Datensatz angezeigt werden.",
+    "fr": "Neben den Kontrollkästen wird bei der Aktivierung der Kästen ein iNovitas Logo eingeblendet. Über diese Schaltfläche kann im eingebetteten infra3D Rail jeweils ein entsprechenden Datensatz angezeigt werden.",
+    "it": "Neben den Kontrollkästen wird bei der Aktivierung der Kästen ein iNovitas Logo eingeblendet. Über diese Schaltfläche kann im eingebetteten infra3D Rail jeweils ein entsprechenden Datensatz angezeigt werden.",
+    "en": "Next to the check boxes, an iNovitas logo is displayed when the boxes are activated. This button can be used to display a corresponding data set in the embedded infra3D Rail."
+  }
+}
