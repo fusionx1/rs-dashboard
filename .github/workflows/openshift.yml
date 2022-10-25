@@ -48,8 +48,10 @@ env:
   #IMAGE_REGISTRY: dockerhub.com/${{ secrets.repository_owner }}
   #IMAGE_REGISTRY_USER: ${{ secrets.actor }}
   #IMAGE_REGISTRY_PASSWORD: ${{ secrets.etoken }}
+  
+  
 
-  IMAGE_REGISTRY: hub.docker.com/fusionx1
+  IMAGE_REGISTRY: ghcr.io/${{ github.repository_owner }}
   IMAGE_REGISTRY_USER: ${{ secrets.ACTOR }}
   IMAGE_REGISTRY_PASSWORD: ${{ secrets.TOKEN }}
   # 🖊️ EDIT to specify custom tags for the container image, or default tags will be generated below.
