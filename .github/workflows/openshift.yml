@@ -49,7 +49,7 @@ env:
   #IMAGE_REGISTRY_USER: ${{ secrets.actor }}
   #IMAGE_REGISTRY_PASSWORD: ${{ secrets.etoken }}
 
-  IMAGE_REGISTRY: dockerhub.com/u/fusionx1
+  IMAGE_REGISTRY: hub.docker.com/u/fusionx1
   IMAGE_REGISTRY_USER: ${{ secrets.actor }}
   IMAGE_REGISTRY_PASSWORD: ${{ secrets.etoken }}
   # 🖊️ EDIT to specify custom tags for the container image, or default tags will be generated below.
