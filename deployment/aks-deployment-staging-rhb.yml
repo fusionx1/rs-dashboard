@@ -1,0 +1,41 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: rsrg-fwddashboard-staging-rhb
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: rsrg-fwddashboard-staging-rhb
+      tier: frontend
+      track: stable
+  template:
+    metadata:
+      labels:
+        app: rsrg-fwddashboard-staging-rhb
+        tier: frontend
+        track: stable
+    spec:
+      containers:
+        - name: rsrg-fwddashboard-staging-rhb
+          image: rsrgchsgsgisfwddashboard.azurecr.io/rsrg-fwddashboard-staging-rhb:v0
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 80
+              name: http
+      restartPolicy: Always
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: rsrg-fwddashboard-staging-rhb
+spec:
+  type: LoadBalancer
+  ports:
+    - port: 8080
+      name: http
+      protocol: "TCP"
+      targetPort: 80
+  selector:
+    app: rsrg-fwddashboard-staging-rhb
+    tier: frontend

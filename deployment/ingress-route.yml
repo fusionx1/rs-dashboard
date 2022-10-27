@@ -1,0 +1,24 @@
+# configuration file to add to the AKS Cluster
+# before adding a nginx-ingress has to bi installed
+# install ingress-nginx auf AKS: 
+# kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.3.0/deploy/static/provider/cloud/deploy.yaml
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: rsrg-fwddashboard-singressroute
+  annotations:
+    nginx.ingress.kubernetes.io/ssl-redirect: "false"
+    nginx.ingress.kubernetes.io/use-regex: "true"
+    #nginx.ingress.kubernetes.io/rewrite-target: /$2
+spec:
+  ingressClassName: nginx
+  rules:
+    - http:
+        paths:
+        - path: /(.*)
+          pathType: Prefix
+          backend:
+            service:
+              name: rsrg-fwddashboard-staging-rhb
+              port:
+                number: 80
