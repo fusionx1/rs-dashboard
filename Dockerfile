@@ -10,10 +10,9 @@ COPY ./ ./
 RUN npm run build
 
 
-FROM nginx:1.19-alpine
+FROM nginx:latest
 
 COPY deployment/nginx.conf /etc/nginx/conf.d/default.conf
-COPY deployment/client_temp /var/cache/nginx/
 COPY --from=build-step app/dist /usr/share/nginx/html
 
 
