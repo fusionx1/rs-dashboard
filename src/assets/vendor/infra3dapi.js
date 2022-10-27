@@ -1,13 +1,4 @@
-/*******************************************************************************
-Project       : Infra3D
-Purpose       : Interface to Infra3D Client
-Creation Date : 22.09.2014
-Update        : 07.12.2018
-Author        : Joel Burkhard / Maurus Dähler
-Copyright     : Copyright (c) 2016 by iNovitas AG. All rights reserved.
-*******************************************************************************/
-
-infra3d = { 'version': '3.13.1' };
+infra3d = { 'version': '3.15.0' }
 infra3d.iframe = null;
 infra3d.origin = "";
 infra3d.cbfpositionchanged = null;
@@ -106,9 +97,9 @@ infra3d._init_internal = function (divid, url, options, cbf, scope) {
          infra3d.iframe.contentWindow.postMessage("initapi", infra3d.origin);
       }
       infra3d.iframe.contentWindow.focus();
-      // infra3d.iframe.contentWindow.addEventListener("click", function(evt) {
-      //    infra3d.iframe.contentWindow.focus();
-      // });
+      infra3d.iframe.contentWindow.addEventListener("click", function(evt) {
+         infra3d.iframe.contentWindow.focus();
+      });
    };
 
    if (options.hasOwnProperty('origin')) {
@@ -287,9 +278,22 @@ infra3d.unsetOnPositionChanged = function () {
 
 //---------------------------------------------------------------------------------------------------------------------
 
-infra3d.onPointPicked = function (easting, northing, height, epsg, tooltype) {
+infra3d.onPointPicked = function (
+   easting, northing, height, epsg, 
+   tooltype, imageX, imageY, disparity, quality,
+   streamid, framenumber, streamname,
+   frameX, frameY, frameZ,
+   precFrameX, precFrameY, precFrameZ
+) {
    if (infra3d.cbfpointpicked !== null) {
-      infra3d.cbfpointpicked.call(infra3d.scopepointpicked, easting, northing, height, epsg, tooltype);
+      infra3d.cbfpointpicked.call(
+         infra3d.scopepointpicked, 
+         easting, northing, height, epsg, 
+         tooltype, imageX, imageY, disparity, quality, 
+         streamid, framenumber, streamname,
+         frameX, frameY, frameZ,
+         precFrameX, precFrameY, precFrameZ
+      );
    }
 };
 

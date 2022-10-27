@@ -39,6 +39,8 @@ const AppBarChartYear: FC<AppBarChartYearProps> = (props: AppBarChartYearProps) 
 
   const [data, setData] = useState<{ year: string }[]>([])
 
+  const [textOpen, setTextOpen] = useState(false)
+
   const [filter, setFilter] = useState<{ id: string, fieldName: string, type: string }>(null)
   useEffect(() => {
     const filter = activeChartFilterValues.find(filter => filter.fieldName === props.yearField)
@@ -121,10 +123,18 @@ const AppBarChartYear: FC<AppBarChartYearProps> = (props: AppBarChartYearProps) 
       }
     }
 
-    console.log(data)
+  const description = ''
 
   return (
-    <div className="w-full h-full pt-2 pb-4 pr-3 overflow-hidden">
+    <div className="w-full h-full pt-2 pb-4 pr-3">
+      {description && <>
+      
+      <button className='absolute info-icon top-[9px] right-[9px]' onMouseOver={() => setTextOpen(true)} onMouseOut={() => setTextOpen(false)}></button>
+      { textOpen &&
+        <div className="bg-sersa2 w-full h-full z-50 text-[12px] items-start justify-center text-justify mb-4 pt-2 px-3">{description}</div>
+      }
+      </>
+      } 
       {data.length > 0 &&
         <ResponsiveContainer>
           <BarChart
@@ -181,6 +191,3 @@ const AppBarChartYear: FC<AppBarChartYearProps> = (props: AppBarChartYearProps) 
   )
 }
 export default AppBarChartYear
-
-
-//props.fieldName + '{color.id}'

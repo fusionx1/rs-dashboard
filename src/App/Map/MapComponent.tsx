@@ -343,7 +343,7 @@ const MapComponent: FC = () => {
 
     return (
         <div
-            className={`absolute left-0 right-0 top-[72px] ${displayHeightInfra3d !== 'full' ? '-bottom-4' : 'bottom-[calc(40%_-_16px)]'} w-full`}
+            className={`absolute left-0 right-0 top-[72px] ${displayHeightInfra3d !== 'closed' ? 'bottom-[calc(40%_-_16px)]' : '-bottom-4'} w-full`}
             ref={mapRef}
         >
             <div

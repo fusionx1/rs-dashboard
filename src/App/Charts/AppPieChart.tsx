@@ -172,7 +172,7 @@ const AppPieChart: FC<AppPieChartProps> = (props: AppPieChartProps) => {
  
   
   return (
-    <div className="w-full h-full pb-4 overflow-hidden">
+    <div className="w-full h-full pb-4">
       {props.description && <>
       
       <button className='absolute info-icon top-[9px] right-[9px]' onMouseOver={() => setTextOpen(true)} onMouseOut={() => setTextOpen(false)}></button>

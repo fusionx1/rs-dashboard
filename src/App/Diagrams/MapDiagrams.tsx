@@ -1,11 +1,9 @@
 import React, { FC, useState } from 'react'
 import './MapDiagrams.scss'
-import CollapsibleBox from '../Layout/CollapsibleBox'
 import AppPieChart from '../Charts/AppPieChart'
 import useMapStore from '../Store/MapStore'
 import AppBarChartYear from '../Charts/AppBarChartYear'
 import { useTranslation } from 'react-i18next'
-import useAppStore from '../Store/AppStore'
 
 
 
@@ -13,18 +11,13 @@ const MapDiagrams: FC = () => {
 
   const { t } = useTranslation()
 
-  const [isOpen, setOpen] = useState(true)
-  const [displayHeight, setDisplayHeight] = useState('middle')
-  
-  const displayHeightInfra3d = useAppStore(state => state.displayHeight)
-
   // Example of conditionally added className, makes the code more readable
 
   const layers = useMapStore(state => state.layers)
   const selected = layers.filter(layer => layer.selected)
 
   return (
-    <div className={`relative flex bg-sersa2 ${displayHeight === 'middle' ? 'h-full w-full' : 'h-2.5 w-full'} z-0`}>
+    <div className='relative flex bg-sersa2 h-full w-full z-0'>
 
       {selected.map(layer => (
 
@@ -44,11 +37,6 @@ const MapDiagrams: FC = () => {
               }
           </div>
       ))}
-      {displayHeightInfra3d !== 'full' &&
-      <div className='absolute flex left-1/2 -top-3'>
-        <CollapsibleBox isOpen={isOpen} setOpen={setOpen} displayHeight={displayHeight} setDisplayHeight={setDisplayHeight} Component={'MapDiagrams'}/>
-      </div>
-      }
     </div>
   )
 }

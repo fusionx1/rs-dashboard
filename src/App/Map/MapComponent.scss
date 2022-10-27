@@ -53,6 +53,7 @@ div.esri-legend__layer-caption {
 .esri-widget__heading.esri-legend__service-label {
   font-size: 18px;
   padding: 6px;
+  margin: 0px;
   font-weight: normal;
 }
 
@@ -111,7 +112,7 @@ section.esri-popup__navigation {
     position: absolute;
     width: 60px;
     height: 16px;
-    background-image: url('https://rhomberg-sersa.maps.arcgis.com/sharing/rest/content/items/d6966abcbac94ad3b582918934b43d1a/data');
+    background-image: url('https://fwd-rhb.maps.arcgis.com/sharing/rest/content/items/b475c0fb13154b6089c86189b782a3b3/data');
     background-size: contain;
     background-repeat: no-repeat;
     cursor: pointer;

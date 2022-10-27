@@ -6,7 +6,7 @@ import { yearFilterConfig } from './data'
 import * as intl from '@arcgis/core/intl'
 
 type AppLang = 'de' | 'en'
-interface YearFilter {
+export interface YearFilter {
     id: number,
     label: string,
     selected: boolean,
@@ -57,7 +57,9 @@ const useAppStore = create<AppStore>((set, get) => ({
         getUniqueValues('Linie', layerUrl)
             .then(res => {
                 const lineFilterValues = res.map((info, index) => {
-                    return { id: index, label: info.value, selected: false }
+                    // Check if the Filter is selected currently and reapply to new filters
+                    const currentlySelected = get().lineFilterValues.find(lfValue => lfValue.label === info.value)?.selected
+                    return { id: index, label: info.value, selected: currentlySelected }
                 }) as Array<{ id: number, label: string, selected: boolean }>
                 set(() => ({ lineFilterValues: lineFilterValues }))
             })

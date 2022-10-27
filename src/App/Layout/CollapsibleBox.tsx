@@ -20,7 +20,7 @@ const CollapsibleBox: FC<CollapsibleBoxProps> = (props) => {
       className="relative right-6 w-9 mx-1.5 text-center text-xs rounded-full ring ring-black ring-1 bg-white z-50"
       onClick={() => {
       if (props.displayHeight === 'closed')
-      {props.setDisplayHeight('middle'); props.setOpen(!props.isOpen)} 
+      {props.setDisplayHeight('middle'); setDisplayHeight('middle'); props.setOpen(!props.isOpen)} 
       else 
       {props.setDisplayHeight('full'); setDisplayHeight('full')}}}
     >
@@ -33,7 +33,7 @@ const CollapsibleBox: FC<CollapsibleBoxProps> = (props) => {
       if (props.displayHeight === 'full') 
       {props.setDisplayHeight('middle'); setDisplayHeight('middle')} 
       else 
-      {props.setDisplayHeight('closed'); props.setOpen(!props.isOpen)}}}
+      {props.setDisplayHeight('closed'); setDisplayHeight('closed'); props.setOpen(!props.isOpen)}}}
     >
       -
     </button>
@@ -41,19 +41,17 @@ const CollapsibleBox: FC<CollapsibleBoxProps> = (props) => {
   let buttonIncrease
   let buttonDecrease
 
-  if (props.Component === 'MapDiagrams') {
+  if (props.Component === 'Map') {
   if (props.displayHeight === 'closed')
       buttonIncrease = increaseButton
   if (props.displayHeight === 'middle')
       buttonDecrease = decreaseButton
+  
     }
 
   else {
-  if (props.displayHeight === 'closed')
-      buttonIncrease = increaseButton
   if (props.displayHeight === 'middle')
-      buttonIncrease = increaseButton,
-      buttonDecrease = decreaseButton
+      buttonIncrease = increaseButton
   if (props.displayHeight === 'full')
       buttonDecrease = decreaseButton
     }

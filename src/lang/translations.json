@@ -65,6 +65,18 @@
     "it": "Netzzustand Fahrbahn pro Linie it",
     "en": "Rail network condition per line"
   },
+  "Trend Netzzustand Fahrbahn": {
+    "de": "Trend Netzzustand Fahrbahn",
+    "fr": "Trend Netzzustand Fahrbahn fr",
+    "it": "Trend Netzzustand Fahrbahn it",
+    "en": "Trend Rail network condition"
+  },
+  "Veränderung Netzzustand Fahrbahn": {
+    "de": "Veränderung Netzzustand Fahrbahn",
+    "fr": "Veränderung Netzzustand Fahrbahn fr",
+    "it": "Veränderung Netzzustand Fahrbahn it",
+    "en": "Change Rail network condition"
+  },
   "Gleislage Unruhe": {
     "de": "Gleislage Unruhe",
     "fr": "Gleislage Unruhe fr",
@@ -76,6 +88,18 @@
     "fr": "Gleislage Unruhe pro Linie fr",
     "it": "Gleislage Unruhe pro Linie it",
     "en": "Track quality per line"
+  },
+  "Trend Gleislage Unruhe": {
+    "de": "Trend Gleislage Unruhe",
+    "fr": "Trend Gleislage Unruhe fr",
+    "it": "Trend Gleislage Unruhe it",
+    "en": "Trend Track quality"
+  },
+  "Veränderung Gleislage Unruhe": {
+    "de": "Veränderung Gleislage Unruhe",
+    "fr": "Veränderung Gleislage Unruhe fr",
+    "it": "Veränderung Gleislage Unruhe it",
+    "en": "Change Track quality"
   },
   "Schwellentyp": {
     "de": "Schwellentyp",
@@ -100,23 +124,30 @@
     "fr": "Qualitätsnote Einzelfehler fr",
     "it": "Qualitätsnote Einzelfehler it",
     "en": "Track quality - Faults"
-  },"Qualitätsnote Einzelfehler pro Linie": {
+  },
+  "Qualitätsnote Einzelfehler pro Linie": {
     "de": "Qualitätsnote Einzelfehler pro Linie",
     "fr": "Qualitätsnote Einzelfehler pro Linie fr",
     "it": "Qualitätsnote Einzelfehler pro Linie it",
     "en": "Track quality - Faults per line"
+  },
+  "Trend Qualitätsnote Einzelfehler": {
+    "de": "Trend Qualitätsnote Einzelfehler",
+    "fr": "Trend Qualitätsnote Einzelfehler fr",
+    "it": "Trend Qualitätsnote Einzelfehler it",
+    "en": "Trend Track quality - Faults"
+  },
+  "Veränderung Qualitätsnote Einzelfehler": {
+    "de": "Veränderung Qualitätsnote Einzelfehler",
+    "fr": "Veränderung Qualitätsnote Einzelfehler fr",
+    "it": "Veränderung Qualitätsnote Einzelfehler it",
+    "en": "Change Track quality - Faults"
   },
   "Belastungsgruppe": {
     "de": "Belastungsgruppe",
     "fr": "Belastungsgruppe fr",
     "it": "Belastungsgruppe it",
     "en": "Load group"
-  },
-  "Trend Netzzustand Fahrbahn": {
-    "de": "Trend Netzzustand Fahrbahn",
-    "fr": "Trend Netzzustand Fahrbahn fr",
-    "it": "Trend Netzzustand Fahrbahn it",
-    "en": "Trend rail network condition"
   },
   "Layerauswahl": {
     "de": "Layerauswahl",
@@ -466,6 +497,18 @@
     "it": "Die Strecke wird in 25m Abschnitten eingeteilt. Innerhalb dieser Abschnitte wird untersucht, ob ein Gleislageparameter (Überhöhung, Verwindung, Richtung und Längshöhe) den Grenzwert überschreitet. Trotz der Einteilung in Abschnitten ist diese Analyse nur punktuell und sind somit als Einzelfehler zu verstehen.",
     "en": "The track is divided into 25m sections. Within these sections it is analysed whether a track position parameter (cant, twist, alignment and longitude) exceeds the limit value. Despite the division by sections, this analysis is only punctual and is therefore to be understood as a single fault."
   },
+  "Trend Qualitätsnote Einzelfehler Description": {
+    "de": "Die Strecke wird in 25m Abschnitten eingeteilt. Innerhalb dieser Abschnitte wird untersucht, ob ein Gleislageparameter (Überhöhung, Verwindung, Richtung und Längshöhe) den Grenzwert überschreitet. Trotz der Einteilung in Abschnitten ist diese Analyse nur punktuell und sind somit als Einzelfehler zu verstehen.",
+    "fr": "Die Strecke wird in 25m Abschnitten eingeteilt. Innerhalb dieser Abschnitte wird untersucht, ob ein Gleislageparameter (Überhöhung, Verwindung, Richtung und Längshöhe) den Grenzwert überschreitet. Trotz der Einteilung in Abschnitten ist diese Analyse nur punktuell und sind somit als Einzelfehler zu verstehen.",
+    "it": "Die Strecke wird in 25m Abschnitten eingeteilt. Innerhalb dieser Abschnitte wird untersucht, ob ein Gleislageparameter (Überhöhung, Verwindung, Richtung und Längshöhe) den Grenzwert überschreitet. Trotz der Einteilung in Abschnitten ist diese Analyse nur punktuell und sind somit als Einzelfehler zu verstehen.",
+    "en": "The track is divided into 25m sections. Within these sections it is analysed whether a track position parameter (cant, twist, alignment and longitude) exceeds the limit value. Despite the division by sections, this analysis is only punctual and is therefore to be understood as a single fault."
+  },
+  "Veränderung Qualitätsnote Einzelfehler Description": {
+    "de": "Die Strecke wird in 25m Abschnitten eingeteilt. Innerhalb dieser Abschnitte wird untersucht, ob ein Gleislageparameter (Überhöhung, Verwindung, Richtung und Längshöhe) den Grenzwert überschreitet. Trotz der Einteilung in Abschnitten ist diese Analyse nur punktuell und sind somit als Einzelfehler zu verstehen.",
+    "fr": "Die Strecke wird in 25m Abschnitten eingeteilt. Innerhalb dieser Abschnitte wird untersucht, ob ein Gleislageparameter (Überhöhung, Verwindung, Richtung und Längshöhe) den Grenzwert überschreitet. Trotz der Einteilung in Abschnitten ist diese Analyse nur punktuell und sind somit als Einzelfehler zu verstehen.",
+    "it": "Die Strecke wird in 25m Abschnitten eingeteilt. Innerhalb dieser Abschnitte wird untersucht, ob ein Gleislageparameter (Überhöhung, Verwindung, Richtung und Längshöhe) den Grenzwert überschreitet. Trotz der Einteilung in Abschnitten ist diese Analyse nur punktuell und sind somit als Einzelfehler zu verstehen.",
+    "en": "The track is divided into 25m sections. Within these sections it is analysed whether a track position parameter (cant, twist, alignment and longitude) exceeds the limit value. Despite the division by sections, this analysis is only punctual and is therefore to be understood as a single fault."
+  },
   "Gleislage Unruhe Description": {
     "de": "Die Strecke wird quasi-kontinuierlich über einen 100m Abschnitt betrachtet. Dabei wird die allgemeine Gleislage auf Unruhe untersucht. Empfohlene Massnahmen: Maschinelles Stopfen oder Revision.",
     "fr": "Die Strecke wird quasi-kontinuierlich über einen 100m Abschnitt betrachtet. Dabei wird die allgemeine Gleislage auf Unruhe untersucht. Empfohlene Massnahmen: Maschinelles Stopfen oder Revision.",
@@ -477,7 +520,19 @@
     "fr": "Die Strecke wird quasi-kontinuierlich über einen 100m Abschnitt betrachtet. Dabei wird die allgemeine Gleislage auf Unruhe untersucht.",
     "it": "Die Strecke wird quasi-kontinuierlich über einen 100m Abschnitt betrachtet. Dabei wird die allgemeine Gleislage auf Unruhe untersucht.",
     "en": "The track is analysed quasi-continuously over a 100m section. The general track condition is assessed for unsteadiness."
-  },    
+  },
+  "Trend Gleislage Unruhe Description": {
+    "de": "Die Strecke wird quasi-kontinuierlich über einen 100m Abschnitt betrachtet. Dabei wird die allgemeine Gleislage auf Unruhe untersucht.",
+    "fr": "Die Strecke wird quasi-kontinuierlich über einen 100m Abschnitt betrachtet. Dabei wird die allgemeine Gleislage auf Unruhe untersucht.",
+    "it": "Die Strecke wird quasi-kontinuierlich über einen 100m Abschnitt betrachtet. Dabei wird die allgemeine Gleislage auf Unruhe untersucht.",
+    "en": "The track is analysed quasi-continuously over a 100m section. The general track condition is assessed for unsteadiness."
+  },
+  "Veränderung Gleislage Unruhe Description": {
+    "de": "Die Strecke wird quasi-kontinuierlich über einen 100m Abschnitt betrachtet. Dabei wird die allgemeine Gleislage auf Unruhe untersucht.",
+    "fr": "Die Strecke wird quasi-kontinuierlich über einen 100m Abschnitt betrachtet. Dabei wird die allgemeine Gleislage auf Unruhe untersucht.",
+    "it": "Die Strecke wird quasi-kontinuierlich über einen 100m Abschnitt betrachtet. Dabei wird die allgemeine Gleislage auf Unruhe untersucht.",
+    "en": "The track is analysed quasi-continuously over a 100m section. The general track condition is assessed for unsteadiness."
+  }, 
   "Netzzustand Fahrbahn Description": {
     "de": "Die Fahrbahnobjekte wurden in Standardelemente eingeteilt. Diese wurden hinsichtlich seiner Restlebensdauer und der Gleislage ohne Spurweite bewertet auf einer Skala von 1-5, wobei 1 die Bestnote ist.",
     "fr": "Die Fahrbahnobjekte wurden in Standardelemente eingeteilt. Diese wurden hinsichtlich seiner Restlebensdauer und der Gleislage ohne Spurweite bewertet auf einer Skala von 1-5, wobei 1 die Bestnote ist.",
@@ -490,17 +545,23 @@
     "it": "Die Fahrbahnobjekte wurden in Standardelemente eingeteilt. Diese wurden hinsichtlich seiner Restlebensdauer und der Gleislage ohne Spurweite bewertet auf einer Skala von 1-5, wobei 1 die Bestnote ist.",
     "en": "The track objects were classified into standard elements. These were assessed in terms of its residual service life and track quality without gauge on a grading scale of 1-5, with 1 being the best mark."
   },
-  "Restlebensdauer Description": {
-    "de": "Die Fahrbahnobjekte wurden in Standardelemente eingeteilt. Diesen Standardelemente werden definierte Nutzungsdauern zugewiesen. Abhängig vom Einbaudatum des Elements resultiert die Restlebensdauer.",
-    "fr": "Die Fahrbahnobjekte wurden in Standardelemente eingeteilt. Diesen Standardelemente werden definierte Nutzungsdauern zugewiesen. Abhängig vom Einbaudatum des Elements resultiert die Restlebensdauer.",
-    "it": "Die Fahrbahnobjekte wurden in Standardelemente eingeteilt. Diesen Standardelemente werden definierte Nutzungsdauern zugewiesen. Abhängig vom Einbaudatum des Elements resultiert die Restlebensdauer.",
-    "en": "The track objects were classified into standard elements. These standard elements are assigned defined service lives. Depending on the installation date of the element, the residual service life results."
-  },
   "Trend Netzzustand Fahrbahn Description": {
     "de": "Die Fahrbahnobjekte wurden in Standardelemente eingeteilt. Diese wurden hinsichtlich seiner Restlebensdauer und der Gleislage ohne Spurweite bewertet auf einer Skala von 1-5, wobei 1 die Bestnote ist.",
     "fr": "Die Fahrbahnobjekte wurden in Standardelemente eingeteilt. Diese wurden hinsichtlich seiner Restlebensdauer und der Gleislage ohne Spurweite bewertet auf einer Skala von 1-5, wobei 1 die Bestnote ist.",
     "it": "Die Fahrbahnobjekte wurden in Standardelemente eingeteilt. Diese wurden hinsichtlich seiner Restlebensdauer und der Gleislage ohne Spurweite bewertet auf einer Skala von 1-5, wobei 1 die Bestnote ist.",
     "en": "The track objects were classified into standard elements. These were assessed in terms of its residual service life and track quality without gauge on a grading scale of 1-5, with 1 being the best mark."
+  },
+  "Veränderung Netzzustand Fahrbahn Description": {
+    "de": "Die Fahrbahnobjekte wurden in Standardelemente eingeteilt. Diese wurden hinsichtlich seiner Restlebensdauer und der Gleislage ohne Spurweite bewertet auf einer Skala von 1-5, wobei 1 die Bestnote ist.",
+    "fr": "Die Fahrbahnobjekte wurden in Standardelemente eingeteilt. Diese wurden hinsichtlich seiner Restlebensdauer und der Gleislage ohne Spurweite bewertet auf einer Skala von 1-5, wobei 1 die Bestnote ist.",
+    "it": "Die Fahrbahnobjekte wurden in Standardelemente eingeteilt. Diese wurden hinsichtlich seiner Restlebensdauer und der Gleislage ohne Spurweite bewertet auf einer Skala von 1-5, wobei 1 die Bestnote ist.",
+    "en": "The track objects were classified into standard elements. These were assessed in terms of its residual service life and track quality without gauge on a grading scale of 1-5, with 1 being the best mark."
+  },
+  "Restlebensdauer Description": {
+    "de": "Die Fahrbahnobjekte wurden in Standardelemente eingeteilt. Diesen Standardelemente werden definierte Nutzungsdauern zugewiesen. Abhängig vom Einbaudatum des Elements resultiert die Restlebensdauer.",
+    "fr": "Die Fahrbahnobjekte wurden in Standardelemente eingeteilt. Diesen Standardelemente werden definierte Nutzungsdauern zugewiesen. Abhängig vom Einbaudatum des Elements resultiert die Restlebensdauer.",
+    "it": "Die Fahrbahnobjekte wurden in Standardelemente eingeteilt. Diesen Standardelemente werden definierte Nutzungsdauern zugewiesen. Abhängig vom Einbaudatum des Elements resultiert die Restlebensdauer.",
+    "en": "The track objects were classified into standard elements. These standard elements are assigned defined service lives. Depending on the installation date of the element, the residual service life results."
   },
   "Layerauswahl Description Paragraph 1": {
     "de": "Über das Aktivieren oder Deaktivieren der Kontrollkästen werden in der Karte die entsprechenden Daten angezeigt bzw. ausgeblendet. Es können bis zu zwei Datensätze gleichzeitig angezeigt werden, wobei diese übereinander, entlang der Gleisachse gelegt werden.",

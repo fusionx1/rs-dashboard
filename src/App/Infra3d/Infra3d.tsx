@@ -22,6 +22,8 @@ const Infra3d: FC = () => {
 
     const [infra3dInitialized, setInfra3dInitialized] = useState(false)
 
+    const displayHeightInfra3d = useAppStore(state => state.displayHeight)
+
     // updates the current infra3d movie position and the movie orientation in the mapstore.
     function positionChangedHandler(easting, northing, height, epsg, orientation, framenumber, cameraname, cameratype, date, address, campaign) {
         useMapStore.setState({
@@ -42,7 +44,8 @@ const Infra3d: FC = () => {
                 map: false,
                 layer: false,
                 navigation: true,
-                credentials: ['Intern_ARGE_infra3D', 'gEm1yi']
+                forcelayerreset: true,
+                credentials: ['rhb_arge_dashboard', '8luvsQeA6pYqXY1nhbfj']
             }, () => {
                 setInfra3dInitialized(true)
                 useMapStore.setState({ displayInfraPosition: true })
@@ -89,14 +92,14 @@ const Infra3d: FC = () => {
 
     return (
         <div
-            className={`relative flex bg-white ${displayHeight === 'full' ? 'h-full w-full' : displayHeight === 'middle' ? 'h-full w-full' : 'h-2.5 w-full'} z-40`}
+            className='relative flex bg-white h-full w-full z-40'
             id="infra3d"
         >
+            {displayHeightInfra3d !== 'closed' &&
             <div className='absolute flex left-1/2 -top-3'>
-                <div className={`relative ${displayHeight === 'middle' ? 'right-6' :''}`}>
                 <CollapsibleBox isOpen={isOpen} setOpen={setOpen} displayHeight={displayHeight} setDisplayHeight={setDisplayHeight} Component={'Infra3d'}/>
-                </div>
-            </div>            
+            </div>
+            }          
         </div>
     )
 }

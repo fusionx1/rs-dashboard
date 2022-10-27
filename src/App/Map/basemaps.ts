@@ -16,7 +16,7 @@ export const grundkarteFarbig = new Basemap({
     ],
     title: t('grundkarte farbig'),
     thumbnailUrl:
-        'https://rsrg-smg.maps.arcgis.com/sharing/rest/content/items/9e9c6687b111405bbe20349f591236b5/data',
+        'https://fwd-rhb.maps.arcgis.com/sharing/rest/content/items/b89e5ef56de04a839fe3de99e0833c39/data',
 })
 export const grundkarteSW = new Basemap({
     baseLayers: [
@@ -29,7 +29,7 @@ export const grundkarteSW = new Basemap({
     ],
     title: t('grundkarte SW'),
     thumbnailUrl:
-        'https://rsrg-smg.maps.arcgis.com/sharing/rest/content/items/86d78ad43bdf48408056eae89ce18778/data',
+        'https://fwd-rhb.maps.arcgis.com/sharing/rest/content/items/0e093906ef5f42a288f311ba78b3b26a/data',
 })
 export const luftbild = new Basemap({
     baseLayers: [
@@ -42,5 +42,5 @@ export const luftbild = new Basemap({
     ],
     title: t('luftbild'),
     thumbnailUrl:
-        'https://rsrg-smg.maps.arcgis.com/sharing/rest/content/items/dc8572c592fc47c1846d65b4eecb8a17/data',
+        'https://fwd-rhb.maps.arcgis.com/sharing/rest/content/items/a5f32e5c51cd4a89850055f1083c7e22/data',
 })

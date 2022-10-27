@@ -1,6 +1,5 @@
 import React, { FC } from 'react'
 import ArgeLogo from '../../assets/ArgeLogo.png'
-import RhB_Logo from '../../assets/RhB_Logo.jpg'
 import { useTranslation } from 'react-i18next'
 import Kartenwechsel from './Kartenwechsel'
 import Sprachwechsel from './Sprachwechsel'
@@ -25,12 +24,6 @@ const Navigation: FC = () => {
           <img src={ArgeLogo} className="h-10 cursor-pointer" />
         </a>
         <h1 className="text-2xl ml-6">{t('title')}</h1>
-      </div>
-      <div className="flex ml-10 items-center">
-        <h1 className="text-sm mr-4">powered by</h1>
-        <a href="https://www.rhb.ch/" target="_blank">
-          <img src={RhB_Logo} className="h-10 cursor-pointer" />
-        </a>
       </div>
       </div>
       <div className='flex flex-1 items-center'>

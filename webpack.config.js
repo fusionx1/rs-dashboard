@@ -1,13 +1,24 @@
+const webpack = require('webpack');
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const path = require("path");
 const fs = require("fs");
+const dotenv = require('dotenv');
 
-module.exports = (env, options) => {
+module.exports = (options) => {
   var isDevelop = options.mode === "development";
   isDevelop && console.log("You are running Webpack in Development mode");
-
+  
+  // call dotenv and it will return an Object with a parsed key 
+  // const env = dotenv.config().parsed;
+  //
+  // // reduce it to a nice object, the same as before
+  // const envKeys = Object.keys(env).reduce((prev, next) => {
+  //   prev[`process.env.${next}`] = JSON.stringify(env[next]);
+  //   return prev;
+  // }, {});
+      
   return {
     entry: {
       index: ["./src/index.tsx"],
@@ -52,7 +63,8 @@ module.exports = (env, options) => {
       ],
     },
     plugins: [
-      new CleanWebpackPlugin(),
+      // new webpack.DefinePlugin(envKeys),
+      new CleanWebpackPlugin(),      
       new HtmlWebPackPlugin({
         title: "React Template Application",
         template: "./src/index.html",

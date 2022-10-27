@@ -63,6 +63,7 @@ const AppBarChartLine: FC<AppBarChartLineProps> = (props: AppBarChartLineProps) 
         result_obj[current_fieldname_translated] = 0
       }
       result_obj[current_fieldname_translated] += current.value
+      result_obj[`${current_fieldname_translated}_km`] = current.km
     })
     return result.sort((a,b) => a.line - b.line)
   }
@@ -79,6 +80,12 @@ const AppBarChartLine: FC<AppBarChartLineProps> = (props: AppBarChartLineProps) 
         outStatisticFieldName: 'value',
         statisticType: 'sum'
       } as StatisticDefinition,
+      {
+        onStatisticField: 'Segmentlaenge_km',
+        outStatisticFieldName: 'km',
+        statisticType: 'sum'
+      } as StatisticDefinition,
+
     ]
     
     query.groupByFieldsForStatistics = [props.lineField, props.fieldName] // = GROUP BY
@@ -97,7 +104,7 @@ const AppBarChartLine: FC<AppBarChartLineProps> = (props: AppBarChartLineProps) 
   useEffect(() => fetchData(), [yearFilter, lineFilter, lang])
 
   return (
-    <div className="w-full h-full pt-2 pb-4 pr-3 overflow-hidden">
+    <div className="w-full h-full pt-2 pb-4 pr-3">
       {props.description && <>
       
       <button className='absolute info-icon top-[9px] right-[9px]' onMouseOver={() => setTextOpen(true)} onMouseOut={() => setTextOpen(false)}></button>
@@ -115,9 +122,11 @@ const AppBarChartLine: FC<AppBarChartLineProps> = (props: AppBarChartLineProps) 
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="line" tick={{fontSize: 12}} />
           <YAxis 
-            tickFormatter={(label) => `${label} %`} 
+            tickFormatter={(label: number) => `${label.toFixed(0)} %`}
             tick={{fontSize: 12}} 
             width={60}
+            tickCount={6}
+            domain={[0, 100]}
             />
           <Tooltip
             contentStyle={{ backgroundColor: 'white'}}
@@ -125,10 +134,10 @@ const AppBarChartLine: FC<AppBarChartLineProps> = (props: AppBarChartLineProps) 
             labelStyle={{fontSize: '14px', fontWeight: 'bold', textAlign: 'center'}}
             wrapperStyle= {{outline:'none'}}
                      
-            formatter={(value) => (
-            <span className="text-[12px]">{value.toFixed(1)} %</span>
+            formatter={(value, name, props) => (
+            <span className="text-[12px]">{props.payload[`${name}_km`].toFixed(1)} km ({value.toFixed(1)} %)</span>
             )}/>
-            
+              
           <Legend 
             layout="horizontal"
             align="center"

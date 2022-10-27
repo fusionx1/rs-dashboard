@@ -21,12 +21,12 @@ export const msalConfig = {
         clientId: "7d882a3b-f2dd-42fb-ae39-11b74bd06a74", // This is the ONLY mandatory field that you need to supply.
         authority: b2cPolicies.authorities.signUpSignIn.authority, // Use a sign-up/sign-in user-flow as a default authority
         knownAuthorities: [b2cPolicies.authorityDomain], // Mark your B2C tenant's domain as trusted.
-        redirectUri: "http://localhost:8080", // Points to window.location.origin. You must register this URI on Azure Portal/App Registration.
-        postLogoutRedirectUri: "http://localhost:8080", // Indicates the page to navigate after logout.
+        redirectUri: "https://dashboard.fahrwegdiagnose.ch", // Points to window.location.origin. You must register this URI on Azure Portal/App Registration. //for prod: https://dashboard.fahrwegdiagnose.ch
+        postLogoutRedirectUri: "https://dashboard.fahrwegdiagnose.ch", // Indicates the page to navigate after logout.
         navigateToLoginRequestUrl: false, // If "true", will navigate back to the original request location before processing the auth code response.
     },
     cache: {
-        cacheLocation: "sessionStorage", // Configures cache location. "sessionStorage" is more secure, but "localStorage" gives you SSO between tabs.
+        cacheLocation: "localStorage", // Configures cache location. "sessionStorage" is more secure, but "localStorage" gives you SSO between tabs.
         storeAuthStateInCookie: false, // Set this to "true" if you are having issues on IE11 or Edge
     },
     system: {	
@@ -61,7 +61,7 @@ export const msalConfig = {
  * https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-permissions-and-consent#openid-connect-scopes
  */
 export const loginRequest = {
-    scopes: ["https://rsrgsgsgisb2c.onmicrosoft.com/7d882a3b-f2dd-42fb-ae39-11b74bd06a74"]
+    scopes: ["https://rsrgsgsgisb2c.onmicrosoft.com/7d882a3b-f2dd-42fb-ae39-11b74bd06a74"],
 };
 
 /**
