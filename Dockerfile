@@ -1,17 +1,19 @@
-FROM node:16
-
-LABEL author="paul.depaula@gmail.com"
+FROM node:latest AS build-step
 
 WORKDIR /app
+COPY package.json ./
+#COPY package-lock.json ./
+RUN npm install
 
-ENV NODE_ENV prod
-ENV PORT 3000
-EXPOSE 3000
 
-COPY package*.json ./
-RUN npm ci
-COPY . ./
+COPY ./ ./
 RUN npm run build
-RUN npm prune --production
 
-ENTRYPOINT [ "npm", "start" ]
+
+FROM nginx:1.19-alpine
+
+COPY deployment/nginx.conf /etc/nginx/conf.d/default.conf
+COPY --from=build-step app/dist /usr/share/nginx/html
+
+
+EXPOSE 80
