@@ -141,7 +141,7 @@ jobs:
     - name: Determine image tags
       if: env.IMAGE_TAGS == ''
       run: |
-        echo "IMAGE_TAGS=latest ${GITHUB_SHA::12}" | tee -a $GITHUB_ENV
+        echo "IMAGE_TAGS=${GITHUB_SHA::12}" | tee -a $GITHUB_ENV
 
     # https://github.com/redhat-actions/buildah-build#readme
     - name: Build from Dockerfile
@@ -191,7 +191,7 @@ jobs:
       uses: redhat-actions/oc-new-app@v1
       with:
         app_name: ${{ env.APP_NAME }}
-        image: ${{ steps.push-image.outputs.registry-path }}
+        image: ${{ steps.push-image.outputs.registry-path }}:${{ steps.build-image.outputs.tags }}
         namespace: ${{ env.OPENSHIFT_NAMESPACE }}
         port: ${{ env.APP_PORT }}
 
