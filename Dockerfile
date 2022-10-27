@@ -15,5 +15,6 @@ FROM nginx:1.19-alpine
 COPY deployment/nginx.conf /etc/nginx/conf.d/default.conf
 COPY --from=build-step app/dist /usr/share/nginx/html
 
+RUN rm -rf /data/nginx/cache/
 
 EXPOSE 80
