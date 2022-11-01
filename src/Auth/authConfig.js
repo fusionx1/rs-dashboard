@@ -1,5 +1,15 @@
 import { LogLevel } from "@azure/msal-browser";
 
+/* Azure B2C redirect URLs for staging branch */
+const RedirectUri = "https://20.229.255.226/" 
+const PostLogoutRedirectUri = "https://20.229.255.226/" 
+
+/* Azure B2C redirect URLs for production branch */
+/*
+const RedirectUri = "https://dashboard.fahrwegdiagnose.ch"
+const PostLogoutRedirectUri = "https://dashboard.fahrwegdiagnose.ch"
+*/
+
 export const b2cPolicies = {
     names: {
         signUpSignIn: "B2C_1_default_mfa",
@@ -21,8 +31,8 @@ export const msalConfig = {
         clientId: "7d882a3b-f2dd-42fb-ae39-11b74bd06a74", // This is the ONLY mandatory field that you need to supply.
         authority: b2cPolicies.authorities.signUpSignIn.authority, // Use a sign-up/sign-in user-flow as a default authority
         knownAuthorities: [b2cPolicies.authorityDomain], // Mark your B2C tenant's domain as trusted.
-        redirectUri: "https://dashboard.fahrwegdiagnose.ch", // Points to window.location.origin. You must register this URI on Azure Portal/App Registration. //for prod: https://dashboard.fahrwegdiagnose.ch
-        postLogoutRedirectUri: "https://dashboard.fahrwegdiagnose.ch", // Indicates the page to navigate after logout.
+        redirectUri: RedirectUri, // Points to window.location.origin. You must register this URI on Azure Portal/App Registration. //for prod: https://dashboard.fahrwegdiagnose.ch
+        postLogoutRedirectUri: PostLogoutRedirectUri, // Indicates the page to navigate after logout.
         navigateToLoginRequestUrl: false, // If "true", will navigate back to the original request location before processing the auth code response.
     },
     cache: {
