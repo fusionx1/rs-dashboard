@@ -12,12 +12,12 @@ const PostLogoutRedirectUri = "https://dashboard.fahrwegdiagnose.ch"
 
 export const b2cPolicies = {
     names: {
-        signUpSignIn: "B2C_1_default_mfa",
+        signUpSignIn: "B2C_1_sign_in_mfa",
         forgotPassword: "B2C_1_password"
     },
     authorities: {
         signUpSignIn: {
-            authority: "https://rsrgsgsgisb2c.b2clogin.com/rsrgsgsgisb2c.onmicrosoft.com/B2C_1_default_mfa",
+            authority: "https://rsrgsgsgisb2c.b2clogin.com/rsrgsgsgisb2c.onmicrosoft.com/B2C_1_sign_in_mfa",
         },
         forgotPassword: {
             authority: "https://rsrgsgsgisb2c.b2clogin.com/rsrgsgsgisb2c.onmicrosoft.com/B2C_1_password",
