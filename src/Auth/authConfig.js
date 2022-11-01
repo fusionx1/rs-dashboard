@@ -1,14 +1,15 @@
 import { LogLevel } from "@azure/msal-browser";
 
 /* Azure B2C redirect URLs for staging branch */
+/*
 const RedirectUri = "https://20.229.255.226/" 
 const PostLogoutRedirectUri = "https://20.229.255.226/" 
-
+*/
 /* Azure B2C redirect URLs for production branch */
-/*
+
 const RedirectUri = "https://dashboard.fahrwegdiagnose.ch"
 const PostLogoutRedirectUri = "https://dashboard.fahrwegdiagnose.ch"
-*/
+
 
 export const b2cPolicies = {
     names: {
