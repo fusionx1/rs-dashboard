@@ -4,8 +4,6 @@ import useAppStore from '../Store/AppStore'
 
 
 interface CollapsibleBoxProps {
-  setOpen: (open: boolean) => void,
-  isOpen: boolean,
   Component: string,
   displayHeight: string,
   setDisplayHeight: (height: string) => void
@@ -15,12 +13,14 @@ interface CollapsibleBoxProps {
 const CollapsibleBox: FC<CollapsibleBoxProps> = (props) => {
 
   const setDisplayHeight = useAppStore(state => state.setDisplayHeight)
+  const infra3dIsOpen = useAppStore(state => state.infra3dIsOpen)
+  const setInfra3dIsOpen = useAppStore(state => state.setInfra3dIsOpen)
 
   const increaseButton = <button
       className="relative right-6 w-9 mx-1.5 text-center text-xs rounded-full ring ring-black ring-1 bg-white z-50"
       onClick={() => {
       if (props.displayHeight === 'closed')
-      {props.setDisplayHeight('middle'); setDisplayHeight('middle'); props.setOpen(!props.isOpen)} 
+      {props.setDisplayHeight('middle'); setDisplayHeight('middle'); setInfra3dIsOpen(!infra3dIsOpen)} 
       else 
       {props.setDisplayHeight('full'); setDisplayHeight('full')}}}
     >
@@ -33,7 +33,7 @@ const CollapsibleBox: FC<CollapsibleBoxProps> = (props) => {
       if (props.displayHeight === 'full') 
       {props.setDisplayHeight('middle'); setDisplayHeight('middle')} 
       else 
-      {props.setDisplayHeight('closed'); setDisplayHeight('closed'); props.setOpen(!props.isOpen)}}}
+      {props.setDisplayHeight('closed'); setDisplayHeight('closed'); setInfra3dIsOpen(!infra3dIsOpen)}}}
     >
       -
     </button>

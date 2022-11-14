@@ -17,7 +17,7 @@ const MapDiagrams: FC = () => {
   const selected = layers.filter(layer => layer.selected)
 
   return (
-    <div className='relative flex bg-sersa2 h-full w-full z-0'>
+    <div className='relative flex bg-sersa2 h-full w-full'>
 
       {selected.map(layer => (
 

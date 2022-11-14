@@ -3,7 +3,7 @@
 export const EPSG = 2056
 
 // use coords in the same spatial ref as defined in globalSpatialReference
-export const infra3dStartPosition = [2771365.4, 1172314.7]
+export const infra3dStartPosition = [2770869.9, 1172325.3]
 
 export const defaultExtent = {
     xmin: 2647000,
@@ -18,11 +18,13 @@ export const defaultExtent = {
 export const FEAT_SERVICE_URL_RhB_2021_1 = 'https://services-eu1.arcgis.com/oT3bo8CXV1cksuST/arcgis/rest/services/RhB_2021_1/FeatureServer'
 export const FEAT_SERVICE_URL_RhB_2021_2 = 'https://services-eu1.arcgis.com/oT3bo8CXV1cksuST/arcgis/rest/services/RhB_2021_2/FeatureServer'
 export const FEAT_SERVICE_URL_RhB_2022_1 = 'https://services-eu1.arcgis.com/oT3bo8CXV1cksuST/arcgis/rest/services/RhB_2022_1/FeatureServer'
+export const FEAT_SERVICE_URL_RhB_2022_2 = 'https://services-eu1.arcgis.com/oT3bo8CXV1cksuST/arcgis/rest/services/RhB_2022_2/FeatureServer'
 
 export const yearFilterConfig = [
-    { id: 0, label: '2021-1', selected: false, url: FEAT_SERVICE_URL_RhB_2021_1, infra3dCampaignId: 4, infra3dCampaignName: 'RhB_2021_1' },
-    { id: 1, label: '2021-2', selected: false, url: FEAT_SERVICE_URL_RhB_2021_2, infra3dCampaignId: 4, infra3dCampaignName: 'RhB_2021_2' },
-    { id: 2, label: '2022-1', selected: true, url: FEAT_SERVICE_URL_RhB_2022_1, infra3dCampaignId: 5, infra3dCampaignName: 'RhB_2022_1' }
+    { id: 0, label: '2021-1', selected: false, url: FEAT_SERVICE_URL_RhB_2021_1, infra3dCampaignId: 4, infra3dCampaignName: 'Mai 2021', infra3dLayerName: 'RhB_2021_1' },
+    { id: 1, label: '2021-2', selected: false, url: FEAT_SERVICE_URL_RhB_2021_2, infra3dCampaignId: 4, infra3dCampaignName: 'Mai 2021', infra3dLayerName: 'RhB_2021_2' },
+    { id: 2, label: '2022-1', selected: false, url: FEAT_SERVICE_URL_RhB_2022_1, infra3dCampaignId: 5, infra3dCampaignName: 'Mai 2022', infra3dLayerName: 'RhB_2022_1' },
+    { id: 3, label: '2022-2', selected: true, url: FEAT_SERVICE_URL_RhB_2022_2, infra3dCampaignId: 5, infra3dCampaignName: 'Mai 2022', infra3dLayerName: 'RhB_2022_2' }
 ]
 export interface AppLayer {
     layerId: number,

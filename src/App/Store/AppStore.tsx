@@ -12,7 +12,8 @@ export interface YearFilter {
     selected: boolean,
     url: string,
     infra3dCampaignId: number,
-    infra3dCampaignName: string
+    infra3dCampaignName: string,
+    infra3dLayerName: string
 }
 interface AppStore {
     appLangs: AppLang[],
@@ -27,6 +28,8 @@ interface AppStore {
     setActiveChartFilter: (id: number, fieldName: string, type: string) => void,
     displayHeight: string,
     setDisplayHeight: (height: string) => void,
+    infra3dIsOpen: boolean,
+    setInfra3dIsOpen: (setOpen: boolean) => void,
 }
 
 const getUniqueValues = (field: string, layerUrl: string) => {
@@ -87,6 +90,10 @@ const useAppStore = create<AppStore>((set, get) => ({
     setDisplayHeight: (height) => {
         set(() => ({displayHeight: height}))
     },
+    infra3dIsOpen: true,
+    setInfra3dIsOpen: (setOpen) => {
+        set(() => ({infra3dIsOpen: setOpen}))
+    }
     
 }))
 

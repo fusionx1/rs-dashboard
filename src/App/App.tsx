@@ -24,11 +24,6 @@ const MainContent: FC = () => {
     const { instance, inProgress } = useMsal();
     const isAuthenticated = useIsAuthenticated();
     const [idTokenClaims, setIdTokenClaims] = useState(null);
-    
-    // msalConfig.redirectUri=process.env.REACT_APP_CONFIG_REDIRECT_URL
-    // msalConfig.postLogoutRedirectUri=process.env.REACT_APP_CONFIG_POST_LOGOUT_REDIRECT_URL
-    // console.log(process.env.REACT_APP_CONFIG_POST_LOGOUT_REDIRECT_URL)
-    
     useEffect(() => {
         const callbackId = instance.addEventCallback((event) => {
             if (event.eventType === EventType.LOGIN_FAILURE) {
